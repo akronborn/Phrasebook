@@ -24,6 +24,7 @@ app.post('/', (req, res) => {
   gtts.save(`${filename}.mp3`, function (err, result) {
     if (err) { throw new Error(err) }
     console.log('Audio file created.');
+    res.redirect('/');
   });
 })
 
