@@ -26,4 +26,4 @@ Author: Clotia Johari
 
 Disclaimers: I'm a Back-end programmer who fits the memes about being afraid of CSS. In 2020, I will become a CSS ninja, making a weaker area a strength.
 
-It's a prototype I knocked out overnight, working on the look and download directory (downloads to root folder on my end, not so on Heroku) this weekend. 
+It's a prototype I knocked out overnight, working on the look (I would normally not use internal css) and download directory (downloads to root folder on my end, not so on Heroku) this weekend. 
