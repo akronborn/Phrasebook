@@ -9,3 +9,6 @@ To recreate:
 Clone repository
 npm install
 
+Author: Clotia Johari
+Disclaimer: I'm a Back-end programmer who fits the memes about being afraid of CSS. In 2020, I will become a CSS ninja, making a weaker area a strength.
+
