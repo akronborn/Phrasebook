@@ -1,11 +1,27 @@
-<h1>Create Your Own Audio PhraseBook with Text to Speech</h1>
-<form method="post" action="/">
-  <label for="form-text">Compose Text to Convert</label> <br>
-  <textarea name="text" id="form-text" cols="30" rows="10" placeholder="Hello. How are you? I'm not from here."
-    required></textarea> <br>
-  <label for="filename">Filename: </label>
-  <input type="text" value="Samplename" name="filename"> <br>
-  <input type="submit" value="Create MP3 File" />
-  <br>
-  <button type="reset">Reset (Clear Field)</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Phrasebook File Creator</title>
+</head>
+
+<body>
+  <h1>Create & Compile Your Own Audio PhraseBook Files with Text to Speech</h1>
+  <form method="post" action="/">
+    <label for="form-text">Compose Text to Convert</label> <br>
+    <textarea name="text" id="form-text" cols="30" rows="10" placeholder="Hello. How are you? I'm not from here."
+      required></textarea> <br>
+    <label for="filename">Filename: </label>
+    <input type="text" placeholder="Salutations" name="filename"> <br>
+    <input type="submit" value="Create MP3 File" />
+    <br>
+    <button type="reset">Reset (Clear Field)</button>
+  </form>
+</body>
+
+*No need to add extension to filename, '.mp3' will be added automatically.
+
+</html>
