@@ -28,6 +28,6 @@ app.post('/', (req, res) => {
 })
 
 
-app.listen(3000, () =>
+app.listen(`${port}`, () =>
   console.log(`Server is listening ${port}`)
 );
