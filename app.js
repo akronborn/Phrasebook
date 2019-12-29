@@ -12,11 +12,11 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
-app.get('/', (req, res) => {
+app.get('/', (req, res, next) => {
   res.render('index')
 });
 
-app.post('/', (req, res) => {
+app.post('/', (req, re, next) => {
 
   let text = req.body.text;
   let filename = req.body.filename;
@@ -24,12 +24,12 @@ app.post('/', (req, res) => {
   let gtts = new gTTS(text, `${lang}`);
   gtts.save(`${filename}.mp3`, function (err, result) {
     if (err) { throw new Error(err) }
-    let filePath = `${__dirname}/${filename}.mp3`;
+    let filePath = `${__dirname}/`;
     //let filePath = `${__dirname} +  ${/downloads/${ filename }.mp3
     // }`;
     res.download(filePath, `${filename}.mp3`);
     console.log('Audio file created.');
-    // res.redirect('/');
+    res.redirect('/');
   });
 })
 
