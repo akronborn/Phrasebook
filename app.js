@@ -25,13 +25,11 @@ app.post('/', (req, res) => {
   let gtts = new gTTS(text, `${lang}`);
   gtts.save(`${filename}.mp3`, function (err, result) {
     if (err) { throw new Error(err) }
-    let filePath = path.join(__dirname, './phrases')
-    res.download(filePath, `${filename}.mp3`);
+    res.download('./', `${filename}.mp3`);
     console.log('Audio file created.');
     res.redirect('/');
   });
 })
-
 
 app.listen(`${port}`, () =>
   console.log(`Server is listening ${port}`)
