@@ -25,7 +25,7 @@ app.post('/', (req, res) => {
     if (err) { throw new Error(err) }
     res.download(`${filename}.mp3`);
     console.log('Audio file created.');
-    res.redirect('/');
+    // res.redirect('/');
   });
 })
 
