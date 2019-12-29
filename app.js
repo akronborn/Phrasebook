@@ -12,11 +12,11 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
-app.get('/', (req, res, next) => {
+app.get('/', (req, res) => {
   res.render('index')
 });
 
-app.post('/', (req, re, next) => {
+app.post('/', (req, res) => {
 
   let text = req.body.text;
   let filename = req.body.filename;
