@@ -29,7 +29,7 @@ app.post('/', (req, res) => {
     // }`;
     res.download(filePath, `${filename}.mp3`);
     console.log('Audio file created.');
-    res.redirect('/');
+    // res.redirect('/');
   });
 })
 
