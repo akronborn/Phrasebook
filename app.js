@@ -2,6 +2,8 @@ const express = require('express');
 const bodyparser = require('body-parser');
 const gTTS = require('gtts');
 const ejs = require('ejs');
+const path = require('path');
+const fs = require('fs');
 
 const app = express();
 
@@ -24,7 +26,8 @@ app.post('/', (req, res) => {
   gtts.save(`${filename}.mp3`, function (err, result) {
     if (err) { throw new Error(err) }
     //let filePath = path.join(__dirname, `/downloads/${filename}.mp3`)
-    res.download(`${filename}.mp3`);
+    //res.download(`${filename}.mp3`);
+    res.download(path.join(__dirname, `/${filename}.mp3`));
     console.log('Audio file created.');
     //res.redirect('/');
   });
