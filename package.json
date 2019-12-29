@@ -19,7 +19,8 @@
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
-    "gtts": "^0.2.1"
+    "gtts": "^0.2.1",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
