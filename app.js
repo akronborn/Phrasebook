@@ -23,12 +23,11 @@ app.post('/', (req, res) => {
   let filename = req.body.filename;
   let lang = req.body.lang;
   let gtts = new gTTS(text, lang);
-  //try 
-  let filepath = path.join(__dirname, `${filename}.mp3`);
-  gtts.save(filepath, function (err, result) {
+
+  gtts.save(`${filename}.mp3`, function (err, result) {
     if (err) { throw new Error(err) }
     console.log('Audio file created.');
-    res.redirect('/');
+
   });
 })
 
