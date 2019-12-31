@@ -1,6 +1,8 @@
-Phrasebook MP3 Creator using Google Text-to-Speech
+Phrasebook MP3 Creator using Google Text-to-Speech (GTTS module)
 
 This site allows users to create individual audio files to create a custom phrasebook in any of the languages Google supports. 
+
+Due to changes with Google clients and billing, credentials have been removed. Site remains up, but unfunctional until integrated into the TriLegion platform.
 
 Live site: https://phrasebooktts.herokuapp.com/
 
@@ -17,13 +19,16 @@ TriLegion launch: February 2020.
 This site will allow users to quickly create on-the-fly audio files to create custom phrasebooks, while or after speaking with their language partners. 
 
 Ex:
+
 Text: Cxi tiu estas la lasta fojo.
+
 Language: eo
+
 Filename: LastEO
+
 File created: LastEO.mp3
 
 Author: Clotia Johari
 
-Disclaimers: I'm a Back-end programmer who fits the memes about being afraid of CSS. In 2020, I will become a CSS ninja, making a weaker area a strength.
+Disclaimers: I'm a Back-end programmer who fits the memes about CSS. In 2020, I will make a weaker area a strength.
 
-It's a prototype I knocked out overnight, working on the look (I would normally not use internal css) and download directory (downloads to root folder on my end, not so on Heroku) this weekend. 
